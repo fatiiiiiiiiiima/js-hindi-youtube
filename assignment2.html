@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Registration Form</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Add custom CSS styling here */
+    /* Example: */
+    .form-container {
+      margin-top: 50px;
+    }
+  </style>
+  <link rel="stylesheet" href="class5.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2 class="text-center mb-4">Product Registration Form</h2>
+      <form class="needs-validation" novalidate>
+        <!-- Product Details -->
+        <div class="form-group">
+          <label for="productName">Product Name</label>
+          <input type="text" class="form-control" id="productName" placeholder="Enter product name" required>
+          <div class="invalid-feedback">
+            Please enter product name.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="productDescription">Description</label>
+          <textarea class="form-control" id="productDescription" placeholder="Enter product description" required></textarea>
+          <div class="invalid-feedback">
+            Please enter product description.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="productPrice">Price</label>
+          <input type="number" class="form-control" id="productPrice" placeholder="Enter product price" required>
+          <div class="invalid-feedback">
+            Please enter valid product price.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="productCategory">Category</label>
+          <input type="text" class="form-control" id="productCategory" placeholder="Enter product category" required>
+          <div class="invalid-feedback">
+            Please enter product category.
+          </div>
+        </div>
+        <!-- Seller Information -->
+        <h4 class="mt-5 mb-3">Seller Information</h4>
+        <div class="form-group">
+          <label for="sellerName">Name</label>
+          <input type="text" class="form-control" id="sellerName" placeholder="Enter your name" required>
+          <div class="invalid-feedback">
+            Please enter your name.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="sellerEmail">Email</label>
+          <input type="email" class="form-control" id="sellerEmail" placeholder="Enter your email" required>
+          <div class="invalid-feedback">
+            Please enter valid email address.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="sellerContact">Contact Number</label>
+          <input type="tel" class="form-control" id="sellerContact" placeholder="Enter your contact number" required>
+          <div class="invalid-feedback">
+            Please enter your contact number.
+          </div>
+        </div>
+        <!-- Image Upload -->
+        <div class="form-group">
+          <label for="productImages">Images</label>
+          <input type="file" class="form-control-file" id="productImages" accept="image/*" multiple required>
+          <div class="invalid-feedback">
+            Please upload image(s).
+          </div>
+        </div>
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-block mt-4">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS (optional, for Bootstrap features that require JS) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
